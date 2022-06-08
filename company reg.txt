@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>2193222 - Assignment 1</title>
+</head>
+<body>
+    
+    <div class="container">  
+
+        <form id="contact" action="/submit.html" method="post">
+          
+          <hr>
+          <h4>Company Registration Form</h4>
+          <hr>
+
+          <fieldset>
+            <label for="bname">Business Name: </label>
+            <input id="bname" placeholder="Business Name" type="text" required autofocus>
+          </fieldset>
+
+          <fieldset>
+            <label for="bphone">Phone: </label>
+            <input id="bphone" placeholder="Phone" type="tel" required>
+          </fieldset>
+          
+          <fieldset>
+            <label for="abn">A.B.N. : </label>
+            <input id="abn" placeholder="A.B.N." type="text" required>
+          </fieldset>
+          
+          <fieldset>
+            <label for="bemail">Email: </label>
+            <input id="bemail" placeholder="Email" type="email" required>
+          </fieldset>
+          
+          <fieldset>
+            <label for="bwebsite">Website: </label>
+            <input id="bwebsite" placeholder="Web Site" type="url" required>
+          </fieldset>
+          
+          <fieldset>
+            <label for="baddress">Shipping Address: </label> <br>
+            <input id="" type="text" placeholder="Street Address"> <br>
+            <input id="" type="text" placeholder="Street Address Line 2"> <br>
+            <input id="" type="text" placeholder="City"> 
+            <input id="" type="text" placeholder="State"> <br>
+            <input id="" type="text" placeholder="Postal / Zip Code">
+            <label for="">Country: </label>
+            <select id="" placeholder="Country">
+              <option value="india">India</option>
+              <option value="us">US</option>
+              <option value="uk">UK</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="btrading">Trading Since: </label> <br>
+            <label for="">Month: </label>
+            <select id="" placeholder="Month">
+              <option value="jan">Jan</option>
+              <option value="feb">Feb</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="aug">Aug</option>
+              <option value="sept">Sept</option>
+              <option value="oct">Oct</option>
+              <option value="nov">Nov</option>
+              <option value="dec">Dec</option>
+            </select>
+            <label for="">Day: </label>
+            <select id="" placeholder="Day">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select> 
+            <label for="">Year: </label>
+            <select id="" placeholder="Year">
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+            </select> 
+          </fieldset>
+
+          <fieldset>
+            <label for="btype">Type of Business: </label> <br>
+            <input id="btype" type="checkbox">Internet</input>
+            <input id="btype" type="checkbox">B2C</input>
+            <input id="btype" type="checkbox">Wholesale</input>
+          </fieldset>
+
+          <fieldset>
+            <label for="bpayment">Preserred Payment: </label> <br>
+            <input id="bpayment" type="checkbox">Paytm</input> <br>
+            <input id="bpayment" type="checkbox">Bank Transfer</input> <br>
+            <input id="bpayment" type="checkbox">Money Order</input> <br>
+            <input id="bpayment" type="checkbox">Cheque</input> <br>
+            <input id="bpayment" type="checkbox">Card</input> <br>
+          </fieldset>
+
+          <hr>
+          <h4>Business Representative Information</h4>
+          <hr>
+
+          <fieldset>
+            <label for="name">Full Name: </label>
+            <input id="name" placeholder="Full Name" type="text" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="address">Address: </label> <br>
+            <input id="" type="text" placeholder="Street Address"> <br>
+            <input id="" type="text" placeholder="Street Address Line 2"> <br>
+            <input id="" type="text" placeholder="City"> 
+            <input id="" type="text" placeholder="State"> <br>
+            <input id="" type="text" placeholder="Postal / Zip Code">
+            <label for="">Country: </label>
+            <select id="" placeholder="Country">
+              <option value="india">India</option>
+              <option value="us">US</option>
+              <option value="uk">UK</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <label for="bphone">Phone: </label>
+            <input id="bphone" placeholder="Phone" type="tel" required>
+          </fieldset>
+
+          <fieldset>
+            <label for="msg">Message: </label> <br>
+            <textarea placeholder="Message..."></textarea>
+          </fieldset>
+
+          <fieldset>
+            <button id="msg" type="submit" id="contact-submit" onClick=fun() >Submit</button>
+          </fieldset>
+
+        </form>
+
+      </div>
+
+<script>
+    function fun(){
+        document.getElementById("contact").submit();
+        alert("Success");
+    }
+</script>
+
+</body>
+</html>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+body{
+  width: 80%;
+  margin: auto;
+  background-color: #f8f8f8;
+  border: none;
+}
+
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 0px;
+  border-style: groove;
+  border-color: threedface;
+}
+
+input[type=text], input[type=tel], input[type=email], input[type=url], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=checkbox]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+button{
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}

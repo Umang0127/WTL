@@ -1,0 +1,29 @@
+<?php
+    $servername="localhost";
+    // username declaration
+    $username="root";
+    // password creation
+    $password="";
+    $dbname= "Student";
+    // creating a connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    //check connection
+    if ($conn-> connect_error) {
+    die("Connection Failure:".mysqli_connect_error());
+    }
+    else{
+        echo "Connection Successful";
+    }
+    // creating a database Student
+    $sql= "CREATE DATABASE newDB";
+    $sql= " INSERT INTO `shubham` (first, last, email) VALUES ('John' , 'esd' , 'john@example.com') ";
+    if (mysqli_query($conn, $sql))
+    {
+        echo "Database with name Students";
+    }
+    else {
+        echo "Error:".$sql. "<br>". mysqli_error($conn); 
+    }
+    // connection closing 
+    mysqli_close($conn);
+    ?>

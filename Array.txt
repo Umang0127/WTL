@@ -1,3 +1,5 @@
+// Write a PHP script for numeric, associative and multidimensional array and perform all sorting functions on it.<br>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -5,35 +7,38 @@
 	<title>Array</title>
 </head>
 <body>
-
 <?php 
-$car = array('sedan','xuv','sport');
-echo "Numeric array";
-foreach ($car as $key => $value) {
-	echo $value ."<br>";
+
+echo "***************Numeric Array************<br>";
+$colors = array("red", "green", "blue", "yellow");
+sort($colors);
+foreach ($colors as $value) {
+  echo "$value <br>";
+}
+echo "<br>***************Associative  Array************<br>";
+
+$name = array("ABC"=>101,"XYZ"=>103,"PQR"=>102,);
+asort($name);
+foreach ($name as $key => $value) {
+
+	echo "<br>keys = ".$key." and  values = ".$value;
+	//echo " <br> $value";
 }
 
-$carPrice = array("bmw" => "10", "audi"=> "20");
-echo "associative array <br>";
-foreach($carPrice as $carName => $price){
-	echo $carName . " " .$price ."<br>";
-}
+echo "<br>***************Multidimensional  Array************<br>";
 
-
-echo "multidimensional array <br>";
-
-$carr = array(
-	array("abc", 10,20),
-	array("pqr",20,30 )
+$cars = array (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
 );
-
-foreach($carr as $index => $data){
+sort($cars);
+foreach($cars as $index => $data){
 	foreach($data as $key => $val){
 		echo $val ."<br>";
 	}
 }
-
 ?>
-
 </body>
 </html>
